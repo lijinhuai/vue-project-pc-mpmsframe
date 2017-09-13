@@ -2,19 +2,20 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import routes from './routes'
 
-import iView from 'iview';
+import iView from 'iview'
 
 Vue.use(Router)
 
 // 路由配置
 const RouterConfig = {
-    mode: 'history',
-    routes: routes
-};
+  // mode: 'history', //后端支持可开
+  // scrollBehavior: () => ({ y: 0 }),
+  routes: routes
+}
 
 const router = new Router({
-    routes: routes
-});
+  routes: RouterConfig
+})
 
 // router.beforeEach((to, from, next) => {
 //     iView.LoadingBar.start();
@@ -54,8 +55,8 @@ const router = new Router({
 // });
 
 router.afterEach(() => {
-    iView.LoadingBar.finish();
-    window.scrollTo(0, 0);
-});
+  iView.LoadingBar.finish()
+  window.scrollTo(0, 0)
+})
 
-export default router;
+export default router
