@@ -3,6 +3,9 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import './permission' // 权限
+import './UI'
+import './icons' // icon
 
 Vue.config.productionTip = false
 

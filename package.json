@@ -19,7 +19,13 @@
     "element-ui": "^1.4.4",
     "eslint-config-vue": "^2.0.2",
     "eslint-plugin-vue": "^2.1.0",
+    "js-cookie": "^2.1.4",
     "mockjs": "^1.0.1-beta3",
+    "node-sass": "^4.5.3",
+    "normalize.css": "^7.0.0",
+    "nprogress": "^0.2.0",
+    "sass-loader": "^6.0.6",
+    "svg-sprite-loader": "^3.2.5",
     "vue": "^2.4.2",
     "vue-router": "^2.7.0",
     "vuex": "^2.4.0"
