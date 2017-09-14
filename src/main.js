@@ -3,9 +3,12 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+import store from './store'
 import './permission' // 权限
 import './UI'
 import './icons' // icon
+// import './errorLog'// error log
+import './mock' // 该项目所有请求使用mockjs模拟
 
 Vue.config.productionTip = false
 
@@ -13,6 +16,9 @@ Vue.config.productionTip = false
 new Vue({
   el: '#app',
   router,
+  store,
   template: '<App/>',
-  components: { App }
+  components: {
+    App
+  }
 })
